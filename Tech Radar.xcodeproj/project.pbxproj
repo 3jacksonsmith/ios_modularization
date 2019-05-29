@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A373EA6229E2ACA001CFA24 /* Platforms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A373EA5229E2ACA001CFA24 /* Platforms.framework */; };
+		7A373EA7229E2ACA001CFA24 /* Platforms.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A373EA5229E2ACA001CFA24 /* Platforms.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A373EA9229E2AE0001CFA24 /* Techniques.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A373EA8229E2AE0001CFA24 /* Techniques.framework */; };
+		7A373EAA229E2AE0001CFA24 /* Techniques.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A373EA8229E2AE0001CFA24 /* Techniques.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A373EAC229E2AE0001CFA24 /* Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A373EAB229E2AE0001CFA24 /* Tools.framework */; };
+		7A373EAD229E2AE0001CFA24 /* Tools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A373EAB229E2AE0001CFA24 /* Tools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A67708F2276ADCC00B8E7C3 /* LanguagesAndFrameworks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A67708E2276ADCC00B8E7C3 /* LanguagesAndFrameworks.framework */; };
 		7A6770902276ADCC00B8E7C3 /* LanguagesAndFrameworks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A67708E2276ADCC00B8E7C3 /* LanguagesAndFrameworks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96FDF122737BC100C1444D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A96FDF022737BC100C1444D /* AppDelegate.swift */; };
@@ -23,7 +29,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7A373EAD229E2AE0001CFA24 /* Tools.framework in Embed Frameworks */,
 				7A6770902276ADCC00B8E7C3 /* LanguagesAndFrameworks.framework in Embed Frameworks */,
+				7A373EA7229E2ACA001CFA24 /* Platforms.framework in Embed Frameworks */,
+				7A373EAA229E2AE0001CFA24 /* Techniques.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +40,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A373EA5229E2ACA001CFA24 /* Platforms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Platforms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A373EA8229E2AE0001CFA24 /* Techniques.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Techniques.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A373EAB229E2AE0001CFA24 /* Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A676FB722766A7800B8E7C3 /* Calibre-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Medium.ttf"; sourceTree = "<group>"; };
 		7A676FB922766CEF00B8E7C3 /* Calibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Regular.ttf"; sourceTree = "<group>"; };
 		7A67708E2276ADCC00B8E7C3 /* LanguagesAndFrameworks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LanguagesAndFrameworks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A373EAC229E2AE0001CFA24 /* Tools.framework in Frameworks */,
 				7A67708F2276ADCC00B8E7C3 /* LanguagesAndFrameworks.framework in Frameworks */,
+				7A373EA6229E2ACA001CFA24 /* Platforms.framework in Frameworks */,
+				7A373EA9229E2AE0001CFA24 /* Techniques.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +158,9 @@
 		7A96FDE422737BC100C1444D = {
 			isa = PBXGroup;
 			children = (
+				7A373EAB229E2AE0001CFA24 /* Tools.framework */,
+				7A373EA8229E2AE0001CFA24 /* Techniques.framework */,
+				7A373EA5229E2ACA001CFA24 /* Platforms.framework */,
 				7A67708E2276ADCC00B8E7C3 /* LanguagesAndFrameworks.framework */,
 				7A96FDEF22737BC100C1444D /* Tech Radar */,
 				7A96FDEE22737BC100C1444D /* Products */,

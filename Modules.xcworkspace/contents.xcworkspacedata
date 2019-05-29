@@ -5,6 +5,15 @@
       location = "container:Tech Radar.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Techniques/Techniques.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tools/Tools.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Platforms/Platforms.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LanguagesAndFrameworks/LanguagesAndFrameworks.xcodeproj">
    </FileRef>
 </Workspace>

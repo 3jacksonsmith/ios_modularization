@@ -67,42 +67,50 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8gU-iL-Loi" userLabel="box container">
-                                <rect key="frame" x="0.0" y="215" width="375" height="322"/>
+                                <rect key="frame" x="0.0" y="215" width="375" height="304"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="MS9-na-7rG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MS9-na-7rG">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle_mask" translatesAutoresizingMaskIntoConstraints="NO" id="1y3-Q5-3su">
-                                                <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="146"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle_mask" translatesAutoresizingMaskIntoConstraints="NO" id="Wan-nj-QoC">
-                                                <rect key="frame" x="201.66666666666663" y="0.0" width="173.33333333333337" height="146"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-kU-sa7">
-                                        <rect key="frame" x="0.0" y="176" width="375" height="146"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle_mask" translatesAutoresizingMaskIntoConstraints="NO" id="95V-os-e0F">
-                                                <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="146"/>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-2v-WJP" customClass="LanguageView" customModule="LanguagesAndFrameworks">
-                                                <rect key="frame" x="201.66666666666663" y="0.0" width="173.33333333333337" height="146"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEX-95-tEc" customClass="TechniquesView" customModule="Techniques">
+                                                <rect key="frame" x="8" y="8" width="164.66666666666666" height="112"/>
+                                                <color key="backgroundColor" red="0.34499999999999997" green="0.72599999999999998" blue="0.79200000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6N-zc-7db" userLabel="Tools" customClass="ToolsView" customModule="Tools">
+                                                <rect key="frame" x="202.66666666666663" y="8" width="164.33333333333337" height="112"/>
+                                                <color key="backgroundColor" red="0.56000000000000005" green="0.69999999999999996" blue="0.52000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
                                         </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-kU-sa7">
+                                        <rect key="frame" x="0.0" y="158" width="375" height="146"/>
+                                        <subviews>
+                                            <view contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-2v-WJP" userLabel="Platforms" customClass="PlatformsView" customModule="Platforms">
+                                                <rect key="frame" x="8" y="8" width="165.66666666666666" height="130"/>
+                                                <color key="backgroundColor" red="0.89000000000000001" green="0.55000000000000004" blue="0.29999999999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDp-7V-Bax" customClass="LanguageView" customModule="LanguagesAndFrameworks">
+                                                <rect key="frame" x="201.66666666666663" y="8" width="165.33333333333337" height="130"/>
+                                                <color key="backgroundColor" red="0.64710000000000001" green="0.18820000000000001" blue="0.34899999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="304" id="O80-yJ-OaM"/>
+                                    <constraint firstItem="q2p-kU-sa7" firstAttribute="top" secondItem="8gU-iL-Loi" secondAttribute="top" constant="158" id="Rgu-4U-rAp"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WuT-bq-DFW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="26V-Xn-QGN"/>
-                            <constraint firstAttribute="trailing" secondItem="8gU-iL-Loi" secondAttribute="trailing" id="6M1-Aq-6hs"/>
-                            <constraint firstItem="8gU-iL-Loi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AgK-VI-bbU"/>
                             <constraint firstItem="WuT-bq-DFW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H9w-bs-vkA"/>
-                            <constraint firstItem="8gU-iL-Loi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NOb-Uj-qtu"/>
-                            <constraint firstItem="8gU-iL-Loi" firstAttribute="top" secondItem="WuT-bq-DFW" secondAttribute="bottom" constant="30" id="fCP-NV-8qq"/>
+                            <constraint firstAttribute="trailing" secondItem="8gU-iL-Loi" secondAttribute="trailing" id="Vri-ZJ-WVg"/>
+                            <constraint firstItem="8gU-iL-Loi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dtc-Gg-JGr"/>
+                            <constraint firstItem="8gU-iL-Loi" firstAttribute="top" secondItem="WuT-bq-DFW" secondAttribute="bottom" constant="30" id="jhA-OY-7Xs"/>
                             <constraint firstItem="WuT-bq-DFW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k9Y-b9-KjM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -113,7 +121,4 @@
             <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="rectangle_mask" width="141" height="146"/>
-    </resources>
 </document>
